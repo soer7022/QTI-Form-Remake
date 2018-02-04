@@ -1,4 +1,4 @@
-.email-field {
+.school-field {
     padding: 13px;
     padding-top:10.5px; 
     padding-bottom:10.5px; 
@@ -9,10 +9,9 @@
     input {
         background: none;
         border: none;
-        width:100%;
     }
 }
-.email-field--has-label {
+.school-field--has-label {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 25px auto;

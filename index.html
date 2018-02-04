@@ -5,12 +5,15 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hallo</title>
+    <title>Start Trial</title>
 </head>
 
 <body>
     <div class="page-wrapper page-wrapper--bg-cover align-items-center" style="background:linear-gradient(0deg,rgba(251, 238, 229,0.9),rgba(251, 238, 229,0.9)),url(/img/webpnet-compress-image.jpg);">
         <div class="container-fluid">
+            <div class="row headline">
+                <h1 class="headline__teacher headline__teacher--bold headline__teacher--centered">Lærer: Prøv QTI på dig selv</h1>
+            </div>
             <div class="row content-wrapper justify-content-between">
                 <div class="ideal-box col-12 col-md-4">
                     <h2 class="ideal-box__header ideal-box__header--bold">Skab din egen idealprofil</h2>
@@ -28,27 +31,36 @@
                 <form class="form-wrapper col-12 col-md-4">
                     <div class="name-input">
                         <div class="name-field name-field--has-label name-field--column1">
-                            <label style="margin: 0 auto 0 0;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
+                            <label style="margin: 0 auto;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
                                 <i class="far fa-user"></i>
                             </label>
-                            <input class="" type="name" name="Firstname" required="false" placeholder="Fornavn" style="-ms-grid-column: 3; -ms-grid-row: 1;">
+                            <input class="" type="name" name="Firstname" placeholder="Fornavn" style="-ms-grid-column: 3; -ms-grid-row: 1;">
                         </div>
                         <div class="name-field name-field--column3">
-                            <input class="" type="name" name="Lastname" required="false" placeholder="Efternavn">
+                            <input class="" type="name" name="Lastname" placeholder="Efternavn">
                         </div>
                     </div>
                     <div class="email-field email-field--has-label" style="-ms-grid-row: 3;">
-                        <label style="margin: 0 auto 0 0;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
+                        <label style="margin: 0 auto;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
                             <i class="far fa-envelope"></i>
                         </label>
-                        <input type="email" required="true" placeholder="E-mail" style="width:100%; -ms-grid-column: 3; -ms-grid-row: 1;" name="Email">
+                        <input type="email" required placeholder="E-mail" style="width:100%; -ms-grid-column: 3; -ms-grid-row: 1;" name="Email">
                     </div>
                     <div class="phone-field phone-field--has-label" style="-ms-grid-row: 5;">
-                            <label style="margin: 0 auto 0 0;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
-                                <i class="fas fa-phone" data-fa-transform="rotate-90"></i>
-                            </label>
-                            <input type="tel" required="false" placeholder="Telefon" style="width:100%; -ms-grid-column: 3; -ms-grid-row: 1;">
-                        </div>
+                        <label style="margin: 0 auto; height:16px;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
+                            <i class="fas fa-phone" data-fa-transform="rotate-90"></i>
+                        </label>
+                        <input maxlength="8" type="tel" placeholder="Telefon" style="width:100%; -ms-grid-column: 3; -ms-grid-row: 1;">
+                    </div>
+                    <div class="school-field school-field--has-label" style="-ms-grid-row: 7;">
+                        <label style="margin: 0 auto; height:16px;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
+                            <i class="fas fa-graduation-cap"></i>
+                        </label>
+                        <input type="text" placeholder="Skole" style="width:100%; -ms-grid-column: 3; -ms-grid-row: 1;">
+                    </div>
+                    <div class="submit-button" style="-ms-grid-row: 9;">
+                        <input class="submit-button__button" type="submit" value="Send">
+                    </div>
                 </form>
             </div>
         </div>

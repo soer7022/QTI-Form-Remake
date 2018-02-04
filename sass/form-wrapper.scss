@@ -2,19 +2,17 @@
     height: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 1fr 12px 1fr 12px 1fr 12px 1fr 12px 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto 12px auto 12px auto 12px auto 12px auto 12px;
+    grid-template-rows: repeat(5,1fr);
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 12px;
     background-color: white;
     padding: 40px;
-    @media all and (max-width:$sm-width) {
-        -ms-grid-rows: 2fr 12px 1fr 12px 1fr 12px 1fr 12px 1fr;
-        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    @media all and (max-width: $sm-width) {
+        grid-template-rows: 2fr repeat(2,1fr);
     }
     @media all and (min-width:$md-width) and (max-width:$lg-width) {
-        -ms-grid-rows: 2fr 12px 1fr 12px 1fr 12px 1fr 12px 1fr;
-        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr repeat(2,1fr);
     }
 }
