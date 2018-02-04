@@ -1,0 +1,19 @@
+.name-input {
+    display: grid;
+    grid-column-gap: 12px;
+    grid-template-columns: auto auto;
+    input {
+        border: none;
+        background: none;
+    }
+}
+.name-input__name-field {
+    display: grid;
+    background-color: #f4f7f6;
+    grid-template-columns: 42px auto;
+}
+.name-input__name-field--label {
+    padding: 13px;
+    padding-top:10.5px; 
+    padding-bottom:10.5px; 
+}

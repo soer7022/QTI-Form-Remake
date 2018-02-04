@@ -1,0 +1,37 @@
+html, body {
+  height: 100%; }
+
+.page-wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.page-wrapper--bg-cover {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.form-wrapper {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  background-color: white; }
+
+.name-input {
+  display: grid;
+  grid-column-gap: 12px;
+  grid-template-columns: auto auto; }
+  .name-input input {
+    border: none;
+    background: none; }
+
+.name-input__name-field {
+  display: grid;
+  background-color: #f4f7f6;
+  grid-template-columns: 42px auto; }
+
+.name-input__name-field--label {
+  padding: 13px;
+  padding-top: 10.5px;
+  padding-bottom: 10.5px; }
