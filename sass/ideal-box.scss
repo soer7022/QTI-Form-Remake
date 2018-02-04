@@ -1,0 +1,15 @@
+.ideal-box {
+    color: black;
+    font-family: sans-serif;
+    text-align: left;
+    line-height: 1.15;
+    @media all and (max-width: $sm-width) {
+        text-align: center;
+    }
+}
+.ideal-box__header {
+
+}
+.ideal-box__header--bold {
+    font-weight: bold;
+}

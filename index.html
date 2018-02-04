@@ -9,25 +9,46 @@
 </head>
 
 <body>
-    <div class="page-wrapper page-wrapper--bg-cover" style="background:linear-gradient(0deg,rgba(251, 238, 229,0.9),rgba(251, 238, 229,0.9)),url(/img/webpnet-compress-image.jpg);">
-        <div class="container mx-auto">
-            <div class="row content-wrapper">
-                <div class="ideal-box col-12 col-md-5" style="border-style: solid">
-                    full of test
+    <div class="page-wrapper page-wrapper--bg-cover align-items-center" style="background:linear-gradient(0deg,rgba(251, 238, 229,0.9),rgba(251, 238, 229,0.9)),url(/img/webpnet-compress-image.jpg);">
+        <div class="container-fluid">
+            <div class="row content-wrapper justify-content-between">
+                <div class="ideal-box col-12 col-md-4">
+                    <h2 class="ideal-box__header ideal-box__header--bold">Skab din egen idealprofil</h2>
+                    <p>Prøv QTI på dig selv helt gratis! Udfyld kontaktformularen, så sender vi dig&nbsp;et link til den del
+                        af QTI-testen, der handler om din ideale QTI-profil.</p>
+                    <p>Når du har besvaret de 32 spørgsmål om, hvordan du gerne vil lede din klasse,&nbsp;udarbejder vi din
+                        ideal&nbsp;QTI-profil og sender den til dig.</p>
+                    <p>Den fulde QTI-test, som din uddannelsesinstitution&nbsp;skal købe licens til, indeholder også besvarelse
+                        af spørgsmålene ud fra, hvordan du opfatter dit samspil med en bestemt klasse, og hvordan&nbsp;dine
+                        elever opfatter dig som klasseleder.</p>
+                    <p>Ved køb af licens skal to af&nbsp;de pædagogiske ledere på din uddannelsesinstitution gennemføre et certificeringskursus.
+                        Certificeringen sikrer dig en kvalificeret udviklingsdialog med din leder og er samtidig din garanti
+                        for en etisk forsvarlig brug af QTI.</p>
                 </div>
-                <form class="form-wrapper col-12 col-md-5">
+                <form class="form-wrapper col-12 col-md-4">
                     <div class="name-input">
-                        <div class="name-input__name-field">
-                            <label class="name-input__name-field--label">
+                        <div class="name-field name-field--has-label name-field--column1">
+                            <label style="margin: 0 auto 0 0;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
                                 <i class="far fa-user"></i>
                             </label>
-                            <input class="" type="name" name="Fornavn" required="false" placeholder="Fornavn">
+                            <input class="" type="name" name="Firstname" required="false" placeholder="Fornavn" style="-ms-grid-column: 3; -ms-grid-row: 1;">
                         </div>
-                        <input type="name">
+                        <div class="name-field name-field--column3">
+                            <input class="" type="name" name="Lastname" required="false" placeholder="Efternavn">
+                        </div>
                     </div>
-                    <div class="">
-                        test
+                    <div class="email-field email-field--has-label" style="-ms-grid-row: 3;">
+                        <label style="margin: 0 auto 0 0;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
+                            <i class="far fa-envelope"></i>
+                        </label>
+                        <input type="email" required="true" placeholder="E-mail" style="width:100%; -ms-grid-column: 3; -ms-grid-row: 1;" name="Email">
                     </div>
+                    <div class="phone-field phone-field--has-label" style="-ms-grid-row: 5;">
+                            <label style="margin: 0 auto 0 0;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
+                                <i class="fas fa-phone" data-fa-transform="rotate-90"></i>
+                            </label>
+                            <input type="tel" required="false" placeholder="Telefon" style="width:100%; -ms-grid-column: 3; -ms-grid-row: 1;">
+                        </div>
                 </form>
             </div>
         </div>

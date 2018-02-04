@@ -1,5 +1,20 @@
 .form-wrapper {
+    height: auto;
+    display: -ms-grid;
     display: grid;
-    grid-template-rows: auto auto auto auto auto;
+    -ms-grid-rows: 1fr 12px 1fr 12px 1fr 12px 1fr 12px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
     background-color: white;
+    padding: 40px;
+    @media all and (max-width:$sm-width) {
+        -ms-grid-rows: 2fr 12px 1fr 12px 1fr 12px 1fr 12px 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    }
+    @media all and (min-width:$md-width) and (max-width:$lg-width) {
+        -ms-grid-rows: 2fr 12px 1fr 12px 1fr 12px 1fr 12px 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    }
 }

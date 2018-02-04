@@ -1,0 +1,42 @@
+.name-field {
+    padding: 13px;
+    padding-top:10.5px; 
+    padding-bottom:10.5px; 
+    background-color: #f4f7f6;
+    font-family: sans-serif;
+    overflow: hidden;
+    max-width: 100%;
+    input {
+        width: 100%;
+    }
+}
+.name-field--column1 {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    @media all and (max-width:$sm-width) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+    }
+    @media all and (min-width:$md-width) and (max-width:$lg-width) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+    }
+}
+.name-field--column3 {
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+    @media all and (max-width:$sm-width) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 3;
+    }
+    @media all and (min-width:$md-width) and (max-width:$lg-width) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 3;
+    }
+}
+.name-field--has-label {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25px auto;
+    grid-template-columns: 25px auto;
+}

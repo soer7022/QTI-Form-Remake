@@ -1,7 +1,15 @@
 html, body {
     height: 100%;
 }
+//Variables
+@import 'variables';
+
 //Blocks
+@import 'content-wrapper';
 @import 'page-wrapper';
 @import 'form-wrapper';
 @import 'name-input';
+@import 'name-field';
+@import 'email-field';
+@import 'phone-field';
+@import 'ideal-box';
