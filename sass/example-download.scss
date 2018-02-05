@@ -1,0 +1,27 @@
+.example-download {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+    margin: 13px 0;
+}
+
+.example-download__text {
+    display: inherit;
+    margin: auto 0;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.15;
+    color: #878787;
+}
+
+.example-download__link {
+    display: inherit;
+    width: auto;
+    margin: auto 0;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.15;
+    color: #7edcff;
+    text-decoration: underline;
+}

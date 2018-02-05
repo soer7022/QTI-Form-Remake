@@ -1,9 +1,17 @@
-html, body {
+html {
+    margin: 0px;
     height: 100%;
+    width: 100%;
 }
+
+body {
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+}
+
 //Variables
 @import 'variables';
-
 //Blocks
 @import 'content-wrapper';
 @import 'page-wrapper';
@@ -14,5 +22,6 @@ html, body {
 @import 'phone-field';
 @import 'school-field';
 @import 'submit-button';
+@import 'example-download';
 @import 'ideal-box';
 @import 'headline';

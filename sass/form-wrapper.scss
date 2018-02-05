@@ -2,8 +2,8 @@
     height: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: auto 12px auto 12px auto 12px auto 12px auto 12px;
-    grid-template-rows: repeat(5,1fr);
+    -ms-grid-rows: auto 12px auto 12px auto 12px auto 12px auto 12px auto;
+    grid-template-rows: repeat(6,1fr);
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 12px;
