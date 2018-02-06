@@ -9,7 +9,8 @@ body {
   width: 100%; }
 
 .content-wrapper {
-  margin: 0 2%; }
+  max-width: 1200px;
+  margin: 0 auto; }
 
 .content-wrapper > * {
   margin: auto; }
@@ -29,6 +30,7 @@ body {
   background-size: cover; }
 
 .form-wrapper {
+  width: 100%;
   height: auto;
   display: -ms-grid;
   display: grid;
@@ -182,13 +184,13 @@ body {
 .example-download {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
+  -ms-grid-columns: auto auto;
   grid-template-columns: auto auto;
-  margin: 13px 0; }
+  margin: 13px auto; }
 
 .example-download__text {
   display: inherit;
-  margin: auto 0;
+  margin: auto 2px;
   font-size: 13px;
   text-align: center;
   line-height: 1.15;
@@ -197,7 +199,7 @@ body {
 .example-download__link {
   display: inherit;
   width: auto;
-  margin: auto 0;
+  margin: auto 2px;
   font-size: 13px;
   text-align: center;
   line-height: 1.15;

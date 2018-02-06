@@ -8,13 +8,20 @@
     <title>Start Trial</title>
 </head>
 
-<body class="page-wrapper page-wrapper--bg-cover align-items-center" style="background:linear-gradient(0deg,rgba(251, 238, 229,0.9),rgba(251, 238, 229,0.9)),url(/img/webpnet-compress-image.jpg);">
+<body class="page-wrapper page-wrapper--bg-cover align-items-center " style="background:linear-gradient(0deg,rgba(251,
+        238, 229,0.9),rgba(251, 238, 229,0.9)),url(/img/webpnet-compress-image.jpg); ">
+    <header>
+        <nav class="nav ">
+
+        </nav>
+    </header>
+    <div class="form-popup" style="display:none;">HEJ GRIMME!</div>
     <div class="container-fluid">
         <div class="row headline">
             <h1 class="headline__teacher headline__teacher--bold headline__teacher--centered">Lærer: Prøv QTI på dig selv</h1>
         </div>
         <div class="row content-wrapper justify-content-between">
-            <div class="ideal-box col-12 col-md-4">
+            <div class="ideal-box col-12 col-md-5">
                 <h2 class="ideal-box__header ideal-box__header--bold">Skab din egen idealprofil</h2>
                 <p>Prøv QTI på dig selv helt gratis! Udfyld kontaktformularen, så sender vi dig&nbsp;et link til den del af
                     QTI-testen, der handler om din ideale QTI-profil.</p>
@@ -27,56 +34,71 @@
                     Certificeringen sikrer dig en kvalificeret udviklingsdialog med din leder og er samtidig din garanti
                     for en etisk forsvarlig brug af QTI.</p>
             </div>
-            <form class="form-wrapper col-12 col-md-4">
-                <div class="name-input">
-                    <div class="name-field name-field--has-label name-field--column1">
+            <div class="col-12 col-md-5" style="display: flex;
+            align-items: center;">
+                <form class="form-wrapper">
+                    <div class="name-input">
+                        <div class="name-field name-field--has-label name-field--column1">
+                            <label style="margin: 0 auto;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
+                                <i class="far fa-user"></i>
+                            </label>
+                            <input type="name" name="Firstname" placeholder="Fornavn" style="-ms-grid-column:
+        3; -ms-grid-row: 1;">
+                        </div>
+                        <div class="name-field name-field--column3">
+                            <input type="name" name="Lastname" placeholder="Efternavn">
+                        </div>
+                    </div>
+                    <div class="email-field email-field--has-label " style="-ms-grid-row: 3;">
                         <label style="margin: 0 auto;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
-                            <i class="far fa-user"></i>
+                            <i class="far fa-envelope"></i>
                         </label>
-                        <input class="" type="name" name="Firstname" placeholder="Fornavn" style="-ms-grid-column: 3; -ms-grid-row: 1;">
+                        <input type="email" required placeholder="E-mail" style="width:100%; -ms-grid-column: 3; -ms-grid-row:
+        1;" name="Email">
                     </div>
-                    <div class="name-field name-field--column3">
-                        <input class="" type="name" name="Lastname" placeholder="Efternavn">
+                    <div class="phone-field phone-field--has-label " style="-ms-grid-row: 5; ">
+                        <label style="margin: 0 auto; height:16px; " style="-ms-grid-column: 1; -ms-grid-row: 1; ">
+                            <i class="fas fa-phone " data-fa-transform="rotate-90 "></i>
+                        </label>
+                        <input maxlength="8" type="tel" placeholder="Telefon" style="width:100%; -ms-grid-column: 3; -ms-grid-row:
+        1;">
                     </div>
-                </div>
-                <div class="email-field email-field--has-label" style="-ms-grid-row: 3;">
-                    <label style="margin: 0 auto;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
-                        <i class="far fa-envelope"></i>
-                    </label>
-                    <input type="email" required placeholder="E-mail" style="width:100%; -ms-grid-column: 3; -ms-grid-row: 1;" name="Email">
-                </div>
-                <div class="phone-field phone-field--has-label" style="-ms-grid-row: 5;">
-                    <label style="margin: 0 auto; height:16px;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
-                        <i class="fas fa-phone" data-fa-transform="rotate-90"></i>
-                    </label>
-                    <input maxlength="8" type="tel" placeholder="Telefon" style="width:100%; -ms-grid-column: 3; -ms-grid-row: 1;">
-                </div>
-                <div class="school-field school-field--has-label" style="-ms-grid-row: 7;">
-                    <label style="margin: 0 auto; height:16px;" style="-ms-grid-column: 1; -ms-grid-row: 1;">
-                        <i class="fas fa-graduation-cap"></i>
-                    </label>
-                    <input type="text" placeholder="Skole" style="width:100%; -ms-grid-column: 3; -ms-grid-row: 1;">
-                </div>
-                <div class="submit-button" style="-ms-grid-row: 9;">
-                    <input class="submit-button__button" type="submit" value="Send">
-                </div>
-                <div class="example-download" style="-ms-grid-row: 11;">
-                    <p class="example-download__text" style="-ms-grid-column: 1;">Se eksempel på en QTI-profil-rapport</p>
-                    <a class="example-download__link" style="-ms-grid-column: 2;" href="https://qti.dk/files/4/qti-profil.pdf">
-                        Download PDF
-                    </a>
-                </div>
-            </form>
+                    <div class="school-field school-field--has-label " style="-ms-grid-row: 7; ">
+                        <label style="margin: 0 auto; height:16px; " style="-ms-grid-column: 1; -ms-grid-row: 1; ">
+                            <i class="fas fa-graduation-cap "></i>
+                        </label>
+                        <input type="text" placeholder="Skole" style="width:100%; -ms-grid-column: 3; -ms-grid-row: 1;">
+                    </div>
+                    <div class="submit-button" style="-ms-grid-row: 9;">
+                        <input class="submit-button__button" type="submit" value="Send">
+                    </div>
+                    <div class="example-download" style="-ms-grid-row: 11;">
+                        <p class="example-download__text" style="-ms-grid-column: 1;">Se eksempel på en QTI-profil-rapport</p>
+                        <a class="example-download__link" style="-ms-grid-column: 2;" href="https://qti.dk/files/4/qti-profil.pdf">
+                            Download PDF
+                        </a>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+    crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
+    crossorigin="anonymous "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
+    crossorigin="anonymous "></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js "></script>
+
+<script>
+    $('document').ready(function () {
+        $('.form-wrapper').submit(function () {
+            $('.form-popup').toggle(1000);
+            return false;
+        })
+    })
+</script>
 
 </html>
