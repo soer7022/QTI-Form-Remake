@@ -195,7 +195,16 @@ html {
 
 .submit-button {
   margin: 0 auto;
-  width: 75%; }
+  width: 75%;
+  -webkit-transition: -webkit-transform 10.0s ease-in-out;
+  transition: -webkit-transform 10.0s ease-in-out;
+  -o-transition: transform 10.0s ease-in-out;
+  transition: transform 10.0s ease-in-out;
+  transition: transform 10.0s ease-in-out, -webkit-transform 10.0s ease-in-out; }
+  .submit-button :hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
 
 .submit-button__button {
   background: none;
@@ -208,7 +217,12 @@ html {
   text-align: center;
   padding: 13px;
   -webkit-box-shadow: 0 6px 14px 0 rgba(126, 220, 255, 0.44);
-  box-shadow: 0 6px 14px 0 rgba(126, 220, 255, 0.44); }
+  box-shadow: 0 6px 14px 0 rgba(126, 220, 255, 0.44);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  -o-transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
 
 .example-download {
   display: -ms-grid;
