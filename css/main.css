@@ -14,8 +14,8 @@ html {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 100;
-  -webkit-box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 10px 14px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 10px 14px 0 rgba(0, 0, 0, 0.5);
   text-align: center;
   padding: 25px;
   border-radius: 5px; }
